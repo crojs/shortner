@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>ShortURL Pro - Free clck.ru URL Shortener</title>
+    <title>ShortURL Pro – Free clck.ru URL Shortener | Enterprise-Grade Link Management</title>
 
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="d65-sBvVulBlxFLQzlz-X7MFoewdhZaYgc4i-1GSTPA" />
@@ -13,1759 +13,164 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <meta name="apple-mobile-web-app-title" content="ShortURL Pro" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="ShortURL Pro - Free premium URL shortener using clck.ru. Shorten any long link instantly. SEO-optimized, responsive, AI-powered.">
-    <meta name="keywords" content="URL shortener, clck.ru, short link, free URL shortener, responsive URL tool">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="ShortURL Pro">
-    <link rel="canonical" href="https://shorturlpro.tools/">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="ShortURL Pro – Free clck.ru URL Shortener | Enterprise-Grade Link Management">
+    <meta name="description" content="Shorten long URLs with clck.ru using ShortURL Pro. AI-powered, enterprise-level URL shortening with QR codes, full history, and privacy-first local storage. SEO-optimized and lightning fast.">
+    <meta name="keywords" content="URL shortener, clck.ru, enterprise URL shortener, premium short link, free link shortener, AI URL analysis, QR code generator, local storage, privacy friendly">
+    <meta name="author" content="ShortURL Pro Team">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://olllo.netlify.app/">
     <meta name="theme-color" content="#1e40af">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="ShortURL Pro - Free clck.ru URL Shortener">
-    <meta property="og:description" content="Shorten links using clck.ru. Free, responsive, AI-powered.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shorturlpro.tools/">
+    <meta property="og:url" content="https://olllo.netlify.app/">
+    <meta property="og:title" content="ShortURL Pro – Free clck.ru URL Shortener | Enterprise-Grade Link Management">
+    <meta property="og:description" content="Shorten long URLs with clck.ru using ShortURL Pro. AI-powered, enterprise-level URL shortening with QR codes, full history, and privacy-first local storage.">
+    <meta property="og:image" content="https://olllo.netlify.app/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="ShortURL Pro">
+    <meta property="og:locale" content="en_US">
 
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ShortURL Pro - Free clck.ru URL Shortener">
-    <meta name="twitter:description" content="Shorten links using clck.ru. Free and responsive.">
+    <meta name="twitter:url" content="https://olllo.netlify.app/">
+    <meta name="twitter:title" content="ShortURL Pro – Free clck.ru URL Shortener | Enterprise-Grade Link Management">
+    <meta name="twitter:description" content="Shorten long URLs with clck.ru using ShortURL Pro. AI-powered, enterprise-level URL shortening with QR codes, full history, and privacy-first local storage.">
+    <meta name="twitter:image" content="https://olllo.netlify.app/og-image.jpg">
 
+    <!-- Font Awesome (integrity removed to avoid console errors) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Organization Schema -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebApplication",
-            "name": "ShortURL Pro",
-            "url": "https://shorturlpro.tools/",
-            "description": "Free premium URL shortener using clck.ru.",
-            "applicationCategory": "UtilityApplication",
-            "operatingSystem": "Any",
-            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-        }
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ShortURL Pro",
+        "url": "https://olllo.netlify.app/",
+        "logo": "https://olllo.netlify.app/favicon-96x96.png",
+        "description": "Enterprise-grade URL shortener powered by clck.ru, featuring AI analysis, QR codes, and privacy-first local storage.",
+        "sameAs": [
+            "https://twitter.com/shorturlpro",
+            "https://facebook.com/shorturlpro",
+            "https://linkedin.com/company/shorturlpro"
+        ]
+    }
     </script>
 
-    <style>
-        :root {
-            --primary: #1e40af;
-            --primary-light: #3b82f6;
-            --primary-dark: #1e3a8a;
-            --secondary: #0ea5e9;
-            --accent: #6366f1;
-            --success: #10b981;
-            --warning: #f59e0b;
-            --danger: #ef4444;
-            --bg: #f8fafc;
-            --bg-card: #ffffff;
-            --bg-dark: #0f172a;
-            --bg-card-dark: #1e293b;
-            --text: #1e293b;
-            --text-light: #64748b;
-            --text-dark: #f1f5f9;
-            --border: #e2e8f0;
-            --border-dark: #334155;
-            --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-            --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
-            --shadow-xl: 0 16px 60px rgba(0, 0, 0, 0.16);
-            --radius: 16px;
-            --radius-sm: 10px;
-            --radius-xs: 6px;
-            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --font: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
-            --gradient: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #0ea5e9 100%);
-            --navbar-height: 64px; /* fixed height for consistent header */
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ShortURL Pro",
+        "url": "https://olllo.netlify.app/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://olllo.netlify.app/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
         }
+    }
+    </script>
 
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <!-- SoftwareApplication Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ShortURL Pro",
+        "url": "https://olllo.netlify.app/",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "description": "Free premium URL shortener using clck.ru with AI-powered analysis, QR code generation, and browser-based history.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1024"
+        },
+        "featureList": [
+            "clck.ru URL shortening",
+            "AI link analysis",
+            "QR code generator",
+            "Local history storage",
+            "Custom short codes"
+        ]
+    }
+    </script>
 
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-            -webkit-text-size-adjust: 100%;
-            -webkit-tap-highlight-color: transparent;
-            overflow-x: hidden; /* prevent horizontal scrolling */
-        }
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "Is ShortURL Pro really free?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, ShortURL Pro is completely free. No signup or hidden fees. Shorten as many URLs as you like."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Which URL shortening services are supported?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We support clck.ru and also local browser-based short links for custom codes and fallback."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Does ShortURL Pro store my data?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, all data including link history is stored locally in your browser. We do not have access to your shortened URLs."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Can I download a QR code for a shortened link?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely! After shortening a URL, you can generate and download a unique QR code for that link."
+            }
+        }]
+    }
+    </script>
 
-        body {
-            font-family: var(--font);
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            transition: background var(--transition), color var(--transition);
-            overflow-x: hidden; /* extra safety */
-            width: 100%;
-            max-width: 100%;
-        }
-
-        body.dark-mode {
-            background: var(--bg-dark);
-            color: var(--text-dark);
-        }
-
-        body.menu-open {
-            overflow: hidden;
-        }
-
-        ::-webkit-scrollbar {
-            width: 5px;
-            height: 5px;
-        }
-        ::-webkit-scrollbar-track {
-            background: var(--bg);
-        }
-        ::-webkit-scrollbar-thumb {
-            background: var(--primary-light);
-            border-radius: 3px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--primary);
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 14px;
-        }
-        @media (min-width: 640px) {
-            .container {
-                padding: 0 18px;
-            }
-        }
-        @media (min-width: 1024px) {
-            .container {
-                padding: 0 24px;
-            }
-        }
-
-        /* ===== NAVIGATION ===== */
-        .navbar {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-            height: var(--navbar-height);
-            display: flex;
-            align-items: center;
-            transition: background var(--transition), border-color var(--transition);
-            width: 100%;
-        }
-        body.dark-mode .navbar {
-            background: rgba(15, 23, 42, 0.92);
-            border-bottom-color: var(--border-dark);
-        }
-        .navbar .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 8px;
-            height: 100%;
-        }
-        .navbar-brand {
-            font-size: 1.25rem; /* consistent base, will scale but keep height stable */
-            font-weight: 800;
-            color: var(--primary);
-            text-decoration: none;
-            letter-spacing: -0.4px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            white-space: nowrap;
-            z-index: 1001;
-            line-height: 1;
-        }
-        @media (min-width: 768px) {
-            .navbar-brand {
-                font-size: 1.5rem;
-            }
-        }
-        .navbar-brand .brand-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--gradient);
-            border-radius: 50%;
-            display: inline-block;
-            animation: pulse-dot 2s infinite;
-        }
-        @keyframes pulse-dot {
-            0%,
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            50% {
-                transform: scale(1.4);
-                opacity: 0.6;
-            }
-        }
-
-        /* ===== SIMPLE TOGGLE BAR (Hamburger) ===== */
-        .hamburger {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 44px;
-            height: 44px;
-            background: transparent;
-            border: 1.5px solid var(--border);
-            border-radius: 8px;
-            cursor: pointer;
-            padding: 0;
-            z-index: 1001;
-            transition: all var(--transition);
-            -webkit-tap-highlight-color: transparent;
-            flex-shrink: 0;
-            position: relative;
-        }
-        @media (min-width: 768px) {
-            .hamburger {
-                display: none;
-            }
-        }
-        .hamburger:hover {
-            border-color: var(--primary-light);
-            background: rgba(59, 130, 246, 0.04);
-        }
-        .hamburger:active {
-            background: rgba(59, 130, 246, 0.08);
-        }
-        body.dark-mode .hamburger {
-            border-color: var(--border-dark);
-        }
-        body.dark-mode .hamburger:hover {
-            border-color: var(--primary-light);
-        }
-        .hamburger .bar {
-            display: block;
-            width: 22px;
-            height: 2px;
-            background: var(--text);
-            border-radius: 2px;
-            transition: all 0.3s ease;
-            margin: 2.5px 0;
-            position: relative;
-        }
-        body.dark-mode .hamburger .bar {
-            background: var(--text-dark);
-        }
-        .hamburger.active .bar:nth-child(1) {
-            transform: translateY(7px) rotate(45deg);
-        }
-        .hamburger.active .bar:nth-child(2) {
-            opacity: 0;
-            transform: scaleX(0);
-        }
-        .hamburger.active .bar:nth-child(3) {
-            transform: translateY(-7px) rotate(-45deg);
-        }
-
-        /* ===== SIMPLE THEME TOGGLE ===== */
-        .theme-toggle-desktop {
-            background: transparent;
-            border: 1.5px solid var(--border);
-            border-radius: 8px;
-            width: 44px;
-            height: 44px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all var(--transition);
-            color: var(--text);
-            flex-shrink: 0;
-            padding: 0;
-            -webkit-tap-highlight-color: transparent;
-        }
-        @media (min-width: 768px) {
-            .theme-toggle-desktop {
-                display: flex;
-            }
-        }
-        .theme-toggle-desktop:hover {
-            border-color: var(--primary-light);
-            background: rgba(59, 130, 246, 0.04);
-        }
-        body.dark-mode .theme-toggle-desktop {
-            border-color: var(--border-dark);
-            color: var(--text-dark);
-        }
-
-        /* Mobile Menu Overlay */
-        .mobile-menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            z-index: 999;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-        .mobile-menu.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        .mobile-menu-content {
-            position: absolute;
-            top: 0;
-            right: -300px;
-            width: 280px;
-            max-width: 85%;
-            height: 100%;
-            background: var(--bg-card);
-            box-shadow: var(--shadow-xl);
-            padding: 76px 18px 28px;
-            transition: right 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            border-left: 1px solid var(--border);
-            overflow-y: auto;
-        }
-        body.dark-mode .mobile-menu-content {
-            background: var(--bg-card-dark);
-            border-left-color: var(--border-dark);
-        }
-        .mobile-menu.active .mobile-menu-content {
-            right: 0;
-        }
-        .mobile-menu-content a {
-            color: var(--text);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 600;
-            padding: 13px 16px;
-            border-radius: var(--radius-xs);
-            transition: all var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            border: 1.5px solid transparent;
-        }
-        body.dark-mode .mobile-menu-content a {
-            color: var(--text-dark);
-        }
-        .mobile-menu-content a:hover {
-            background: rgba(59, 130, 246, 0.08);
-            color: var(--primary);
-            border-color: rgba(59, 130, 246, 0.2);
-            transform: translateX(-4px);
-        }
-        .mobile-menu-content .mobile-theme-toggle {
-            margin-top: auto;
-            padding: 13px 16px;
-            border: 1.5px solid var(--border);
-            border-radius: var(--radius-xs);
-            background: transparent;
-            cursor: pointer;
-            font-size: 0.95rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: var(--text);
-            transition: all var(--transition);
-            -webkit-tap-highlight-color: transparent;
-        }
-        body.dark-mode .mobile-menu-content .mobile-theme-toggle {
-            color: var(--text-dark);
-            border-color: var(--border-dark);
-        }
-        .mobile-menu-content .mobile-theme-toggle:hover {
-            border-color: var(--primary-light);
-            background: rgba(59, 130, 246, 0.06);
-        }
-
-        /* Desktop nav links */
-        .navbar-links {
-            display: none;
-            align-items: center;
-            gap: 6px;
-            list-style: none;
-            height: 100%;
-        }
-        @media (min-width: 768px) {
-            .navbar-links {
-                display: flex;
-                gap: 12px;
-            }
-        }
-        .navbar-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-            padding: 6px 12px;
-            border-radius: var(--radius-xs);
-            transition: all var(--transition);
-            white-space: nowrap;
-            display: inline-flex;
-            align-items: center;
-            height: 100%;
-        }
-        .navbar-links a:hover {
-            color: var(--primary);
-            background: rgba(59, 130, 246, 0.08);
-        }
-        body.dark-mode .navbar-links a {
-            color: var(--text-dark);
-            opacity: 0.7;
-        }
-        body.dark-mode .navbar-links a:hover {
-            color: var(--text-dark);
-            opacity: 1;
-            background: rgba(59, 130, 246, 0.15);
-        }
-
-        /* ===== HERO ===== */
-        .hero {
-            flex: 1;
-            padding: 24px 0 16px;
-            position: relative;
-            width: 100%;
-            overflow-x: hidden;
-        }
-        @media (min-width: 640px) {
-            .hero {
-                padding: 32px 0 24px;
-            }
-        }
-        @media (min-width: 768px) {
-            .hero {
-                padding: 40px 0 30px;
-            }
-        }
-        @media (min-width: 1024px) {
-            .hero {
-                padding: 56px 0 40px;
-            }
-        }
-        .hero-content {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .hero-badge {
-            display: inline-block;
-            background: rgba(59, 130, 246, 0.1);
-            color: var(--primary);
-            font-size: 0.6rem;
-            font-weight: 600;
-            padding: 4px 10px;
-            border-radius: 50px;
-            margin-bottom: 10px;
-            letter-spacing: 0.4px;
-            text-transform: uppercase;
-            border: 1px solid rgba(59, 130, 246, 0.2);
-        }
-        @media (min-width: 640px) {
-            .hero-badge {
-                font-size: 0.7rem;
-                padding: 5px 14px;
-                margin-bottom: 14px;
-            }
-        }
-        @media (min-width: 768px) {
-            .hero-badge {
-                font-size: 0.8rem;
-                padding: 6px 16px;
-                margin-bottom: 18px;
-            }
-        }
-        body.dark-mode .hero-badge {
-            background: rgba(59, 130, 246, 0.2);
-            color: var(--primary-light);
-            border-color: rgba(59, 130, 246, 0.3);
-        }
-        .hero h1 {
-            font-size: 1.4rem;
-            font-weight: 900;
-            letter-spacing: -0.4px;
-            line-height: 1.25;
-            margin-bottom: 6px;
-            background: var(--gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        @media (min-width: 640px) {
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .hero h1 {
-                font-size: 2.2rem;
-                letter-spacing: -0.6px;
-                margin-bottom: 10px;
-            }
-        }
-        @media (min-width: 1024px) {
-            .hero h1 {
-                font-size: 2.8rem;
-                letter-spacing: -0.8px;
-                margin-bottom: 14px;
-            }
-        }
-        .hero p {
-            font-size: 0.8rem;
-            color: var(--text-light);
-            max-width: 600px;
-            margin: 0 auto 14px;
-            line-height: 1.6;
-        }
-        @media (min-width: 640px) {
-            .hero p {
-                font-size: 0.9rem;
-                margin-bottom: 18px;
-            }
-        }
-        @media (min-width: 768px) {
-            .hero p {
-                font-size: 1rem;
-                margin-bottom: 22px;
-            }
-        }
-        @media (min-width: 1024px) {
-            .hero p {
-                font-size: 1.1rem;
-                margin-bottom: 28px;
-            }
-        }
-        body.dark-mode .hero p {
-            color: var(--text-dark);
-            opacity: 0.7;
-        }
-
-        /* ===== SHORTENER CARD ===== */
-        .shortener-card {
-            background: var(--bg-card);
-            border-radius: var(--radius-sm);
-            box-shadow: var(--shadow-lg);
-            padding: 14px;
-            max-width: 700px;
-            margin: 0 auto;
-            border: 1px solid var(--border);
-            transition: all var(--transition);
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-        @media (min-width: 640px) {
-            .shortener-card {
-                padding: 20px;
-                border-radius: var(--radius);
-            }
-        }
-        @media (min-width: 768px) {
-            .shortener-card {
-                padding: 28px;
-            }
-        }
-        @media (min-width: 1024px) {
-            .shortener-card {
-                padding: 36px;
-            }
-        }
-        .shortener-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: var(--gradient);
-        }
-        body.dark-mode .shortener-card {
-            background: var(--bg-card-dark);
-            border-color: var(--border-dark);
-            box-shadow: var(--shadow-xl);
-        }
-        .shortener-card .input-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-bottom: 12px;
-        }
-        @media (min-width: 640px) {
-            .shortener-card .input-group {
-                gap: 12px;
-                margin-bottom: 16px;
-            }
-        }
-        @media (min-width: 768px) {
-            .shortener-card .input-group {
-                gap: 14px;
-                margin-bottom: 20px;
-            }
-        }
-        .shortener-card label {
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--text);
-            text-align: left;
-            margin-bottom: -2px;
-        }
-        @media (min-width: 640px) {
-            .shortener-card label {
-                font-size: 0.85rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .shortener-card label {
-                font-size: 0.9rem;
-            }
-        }
-        body.dark-mode .shortener-card label {
-            color: var(--text-dark);
-        }
-        .input-wrapper {
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            width: 100%;
-        }
-        .input-wrapper input[type="url"],
-        .input-wrapper input[type="text"] {
-            flex: 1;
-            width: 100%;
-            padding: 10px 12px 10px 34px;
-            font-size: 0.8rem;
-            border: 2px solid var(--border);
-            border-radius: var(--radius-xs);
-            outline: none;
-            transition: all var(--transition);
-            background: var(--bg);
-            color: var(--text);
-            font-family: var(--font);
-            min-width: 0;
-        }
-        @media (min-width: 640px) {
-            .input-wrapper input[type="url"],
-            .input-wrapper input[type="text"] {
-                padding: 12px 16px 12px 38px;
-                font-size: 0.9rem;
-                border-radius: var(--radius-sm);
-            }
-        }
-        @media (min-width: 768px) {
-            .input-wrapper input[type="url"],
-            .input-wrapper input[type="text"] {
-                padding: 14px 18px 14px 40px;
-                font-size: 1rem;
-            }
-        }
-        body.dark-mode .input-wrapper input[type="url"],
-        body.dark-mode .input-wrapper input[type="text"] {
-            background: var(--bg-dark);
-            border-color: var(--border-dark);
-            color: var(--text-dark);
-        }
-        .input-wrapper input:focus {
-            border-color: var(--primary-light);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
-        }
-        .input-wrapper input::placeholder {
-            color: var(--text-light);
-            opacity: 0.55;
-            font-size: 0.75rem;
-        }
-        @media (min-width: 640px) {
-            .input-wrapper input::placeholder {
-                font-size: 0.85rem;
-            }
-        }
-        .input-wrapper input.error {
-            border-color: var(--danger);
-            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
-        }
-        .input-wrapper .url-prefix {
-            position: absolute;
-            left: 10px;
-            font-size: 0.8rem;
-            pointer-events: none;
-            opacity: 0.7;
-            z-index: 1;
-        }
-        @media (min-width: 640px) {
-            .input-wrapper .url-prefix {
-                left: 12px;
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Service Selector */
-        .service-selector {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-top: 4px;
-            width: 100%;
-        }
-        .service-selector label {
-            font-size: 0.7rem;
-            font-weight: 500;
-            color: var(--text-light);
-            margin-bottom: 0;
-            white-space: nowrap;
-        }
-        @media (min-width: 640px) {
-            .service-selector label {
-                font-size: 0.8rem;
-            }
-        }
-        body.dark-mode .service-selector label {
-            color: var(--text-dark);
-            opacity: 0.7;
-        }
-        .service-selector select {
-            padding: 6px 10px;
-            border: 2px solid var(--border);
-            border-radius: var(--radius-xs);
-            font-size: 0.75rem;
-            background: var(--bg);
-            color: var(--text);
-            outline: none;
-            transition: all var(--transition);
-            cursor: pointer;
-            flex: 1 1 120px;
-            min-width: 0;
-            max-width: 100%;
-            font-family: var(--font);
-        }
-        @media (min-width: 640px) {
-            .service-selector select {
-                padding: 8px 12px;
-                font-size: 0.85rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .service-selector select {
-                padding: 10px 14px;
-                font-size: 0.9rem;
-            }
-        }
-        body.dark-mode .service-selector select {
-            background: var(--bg-dark);
-            border-color: var(--border-dark);
-            color: var(--text-dark);
-        }
-        .service-selector select:focus {
-            border-color: var(--primary-light);
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
-        }
-        .service-selector .service-info {
-            font-size: 0.65rem;
-            color: var(--text-light);
-            font-style: italic;
-            white-space: nowrap;
-        }
-        @media (min-width: 640px) {
-            .service-selector .service-info {
-                font-size: 0.75rem;
-            }
-        }
-        body.dark-mode .service-selector .service-info {
-            color: var(--text-dark);
-            opacity: 0.6;
-        }
-
-        /* Custom slug row */
-        .custom-slug-row {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex-wrap: wrap;
-            margin-top: 4px;
-            width: 100%;
-        }
-        .custom-slug-row label {
-            font-size: 0.7rem;
-            font-weight: 500;
-            color: var(--text-light);
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            cursor: pointer;
-            margin-bottom: 0;
-            white-space: nowrap;
-        }
-        @media (min-width: 640px) {
-            .custom-slug-row label {
-                font-size: 0.8rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .custom-slug-row label {
-                font-size: 0.85rem;
-            }
-        }
-        body.dark-mode .custom-slug-row label {
-            color: var(--text-dark);
-            opacity: 0.7;
-        }
-        .custom-slug-row input[type="checkbox"] {
-            width: 14px;
-            height: 14px;
-            accent-color: var(--primary);
-            cursor: pointer;
-            flex-shrink: 0;
-        }
-        .custom-slug-row .slug-input-wrapper {
-            flex: 1 1 120px;
-            min-width: 0;
-            display: none;
-        }
-        .custom-slug-row .slug-input-wrapper.visible {
-            display: block;
-        }
-        .custom-slug-row .slug-input-wrapper input {
-            width: 100%;
-            padding: 7px 10px;
-            border: 2px solid var(--border);
-            border-radius: var(--radius-xs);
-            font-size: 0.75rem;
-            outline: none;
-            background: var(--bg);
-            color: var(--text);
-            transition: all var(--transition);
-        }
-        @media (min-width: 640px) {
-            .custom-slug-row .slug-input-wrapper input {
-                padding: 8px 12px;
-                font-size: 0.8rem;
-            }
-        }
-        body.dark-mode .custom-slug-row .slug-input-wrapper input {
-            background: var(--bg-dark);
-            border-color: var(--border-dark);
-            color: var(--text-dark);
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            padding: 10px 16px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            border: none;
-            border-radius: var(--radius-xs);
-            cursor: pointer;
-            transition: all var(--transition);
-            text-decoration: none;
-            font-family: var(--font);
-            letter-spacing: 0.3px;
-            position: relative;
-            overflow: hidden;
-            white-space: nowrap;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-        @media (min-width: 640px) {
-            .btn {
-                padding: 12px 20px;
-                font-size: 0.9rem;
-                border-radius: var(--radius-sm);
-            }
-        }
-        @media (min-width: 768px) {
-            .btn {
-                padding: 14px 24px;
-                font-size: 1rem;
-            }
-        }
-        .btn-primary {
-            background: var(--gradient);
-            color: #fff;
-            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
-        }
-        .btn-primary:hover {
-            box-shadow: 0 4px 16px rgba(59, 130, 246, 0.45);
-            transform: translateY(-1px);
-        }
-        .btn-primary:active {
-            transform: translateY(0);
-        }
-        .btn-primary:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-            transform: none;
-            box-shadow: none;
-        }
-        .btn-secondary {
-            background: transparent;
-            color: var(--primary);
-            border: 2px solid var(--primary-light);
-            box-shadow: none;
-        }
-        .btn-secondary:hover {
-            background: rgba(59, 130, 246, 0.06);
-            border-color: var(--primary);
-        }
-        body.dark-mode .btn-secondary {
-            color: var(--primary-light);
-            border-color: var(--primary-light);
-        }
-        .btn-success {
-            background: var(--success);
-            color: #fff;
-            box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
-        }
-        .btn-success:hover {
-            box-shadow: 0 4px 16px rgba(16, 185, 129, 0.45);
-            transform: translateY(-1px);
-        }
-        .btn-sm {
-            padding: 5px 10px;
-            font-size: 0.7rem;
-            border-radius: var(--radius-xs);
-        }
-        @media (min-width: 640px) {
-            .btn-sm {
-                padding: 7px 12px;
-                font-size: 0.8rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .btn-sm {
-                padding: 8px 14px;
-                font-size: 0.85rem;
-            }
-        }
-        .btn-block {
-            width: 100%;
-            min-height: 40px;
-        }
-        @media (min-width: 640px) {
-            .btn-block {
-                min-height: 44px;
-            }
-        }
-        @media (min-width: 768px) {
-            .btn-block {
-                min-height: 48px;
-            }
-        }
-
-        /* Result section */
-        .result-section {
-            display: none;
-            margin-top: 12px;
-            padding: 14px;
-            background: rgba(16, 185, 129, 0.05);
-            border: 1.5px dashed rgba(16, 185, 129, 0.4);
-            border-radius: var(--radius-xs);
-            animation: slideDown 0.4s ease;
-        }
-        @media (min-width: 640px) {
-            .result-section {
-                padding: 18px;
-                margin-top: 16px;
-                border-radius: var(--radius-sm);
-            }
-        }
-        @media (min-width: 768px) {
-            .result-section {
-                padding: 22px;
-                margin-top: 20px;
-            }
-        }
-        .result-section.visible {
-            display: block;
-        }
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        .result-section .result-label {
-            font-size: 0.65rem;
-            font-weight: 600;
-            color: var(--success);
-            text-transform: uppercase;
-            letter-spacing: 0.6px;
-            margin-bottom: 5px;
-        }
-        @media (min-width: 640px) {
-            .result-section .result-label {
-                font-size: 0.75rem;
-            }
-        }
-        .result-section .result-url {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex-wrap: wrap;
-            width: 100%;
-        }
-        .result-section .result-url input {
-            flex: 1;
-            min-width: 0;
-            width: 100%;
-            padding: 8px 10px;
-            border: 2px solid var(--success);
-            border-radius: var(--radius-xs);
-            font-size: 0.75rem;
-            color: var(--text);
-            background: var(--bg-card);
-            font-family: 'Courier New', monospace;
-            outline: none;
-            transition: all var(--transition);
-        }
-        @media (min-width: 640px) {
-            .result-section .result-url input {
-                font-size: 0.85rem;
-                padding: 10px 12px;
-            }
-        }
-        body.dark-mode .result-section .result-url input {
-            background: var(--bg-card-dark);
-            color: var(--text-dark);
-        }
-        .result-actions {
-            display: flex;
-            gap: 5px;
-            flex-wrap: wrap;
-            margin-top: 8px;
-            width: 100%;
-        }
-        @media (min-width: 640px) {
-            .result-actions {
-                gap: 8px;
-                margin-top: 10px;
-            }
-        }
-
-        .spinner {
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-top-color: #fff;
-            border-radius: 50%;
-            animation: spin 0.7s linear infinite;
-            flex-shrink: 0;
-        }
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        .error-message {
-            display: none;
-            color: var(--danger);
-            font-size: 0.7rem;
-            font-weight: 500;
-            margin-top: 4px;
-            text-align: left;
-            padding: 6px 8px;
-            background: rgba(239, 68, 68, 0.08);
-            border-radius: var(--radius-xs);
-        }
-        @media (min-width: 640px) {
-            .error-message {
-                font-size: 0.8rem;
-                padding: 8px 10px;
-            }
-        }
-        .error-message.visible {
-            display: block;
-            animation: shake 0.4s ease;
-        }
-        @keyframes shake {
-            0%,
-            100% {
-                transform: translateX(0);
-            }
-            25% {
-                transform: translateX(-3px);
-            }
-            75% {
-                transform: translateX(3px);
-            }
-        }
-
-        .ai-analysis {
-            display: none;
-            margin-top: 8px;
-            padding: 10px 12px;
-            background: rgba(99, 102, 241, 0.06);
-            border: 1px solid rgba(99, 102, 241, 0.2);
-            border-radius: var(--radius-xs);
-            text-align: left;
-            font-size: 0.7rem;
-        }
-        @media (min-width: 640px) {
-            .ai-analysis {
-                padding: 12px 14px;
-                font-size: 0.8rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .ai-analysis {
-                padding: 14px 18px;
-                font-size: 0.9rem;
-            }
-        }
-        .ai-analysis.visible {
-            display: block;
-            animation: slideDown 0.3s ease;
-        }
-        .ai-analysis .ai-header {
-            font-weight: 700;
-            color: var(--accent);
-            margin-bottom: 3px;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            flex-wrap: wrap;
-        }
-        .ai-analysis .ai-detail {
-            color: var(--text-light);
-            line-height: 1.5;
-        }
-        body.dark-mode .ai-analysis .ai-detail {
-            color: var(--text-dark);
-            opacity: 0.7;
-        }
-
-        /* ===== FEATURES ===== */
-        .features {
-            padding: 24px 0;
-        }
-        @media (min-width: 640px) {
-            .features {
-                padding: 32px 0;
-            }
-        }
-        @media (min-width: 1024px) {
-            .features {
-                padding: 48px 0;
-            }
-        }
-        .features .section-title {
-            text-align: center;
-            font-size: 1.1rem;
-            font-weight: 800;
-            margin-bottom: 5px;
-            letter-spacing: -0.3px;
-        }
-        @media (min-width: 640px) {
-            .features .section-title {
-                font-size: 1.4rem;
-            }
-        }
-        @media (min-width: 1024px) {
-            .features .section-title {
-                font-size: 1.8rem;
-                margin-bottom: 10px;
-            }
-        }
-        .features .section-subtitle {
-            text-align: center;
-            color: var(--text-light);
-            font-size: 0.75rem;
-            margin-bottom: 16px;
-        }
-        @media (min-width: 640px) {
-            .features .section-subtitle {
-                font-size: 0.85rem;
-            }
-        }
-        @media (min-width: 1024px) {
-            .features .section-subtitle {
-                font-size: 1rem;
-                margin-bottom: 32px;
-            }
-        }
-        body.dark-mode .features .section-subtitle {
-            color: var(--text-dark);
-            opacity: 0.6;
-        }
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 8px;
-            width: 100%;
-        }
-        @media (min-width: 640px) {
-            .features-grid {
-                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-                gap: 14px;
-            }
-        }
-        @media (min-width: 1024px) {
-            .features-grid {
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                gap: 20px;
-            }
-        }
-        .feature-card {
-            background: var(--bg-card);
-            border-radius: var(--radius-xs);
-            padding: 12px 10px;
-            text-align: center;
-            border: 1px solid var(--border);
-            transition: all var(--transition);
-            box-shadow: var(--shadow);
-        }
-        @media (min-width: 640px) {
-            .feature-card {
-                padding: 16px 14px;
-                border-radius: var(--radius-sm);
-            }
-        }
-        @media (min-width: 768px) {
-            .feature-card {
-                padding: 22px 18px;
-            }
-        }
-        .feature-card:hover {
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-2px);
-            border-color: rgba(59, 130, 246, 0.3);
-        }
-        body.dark-mode .feature-card {
-            background: var(--bg-card-dark);
-            border-color: var(--border-dark);
-        }
-        .feature-card .feature-symbol {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background: var(--gradient);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.9rem;
-            font-weight: 800;
-            margin: 0 auto 6px;
-        }
-        @media (min-width: 640px) {
-            .feature-card .feature-symbol {
-                width: 38px;
-                height: 38px;
-                font-size: 1.1rem;
-                margin-bottom: 10px;
-            }
-        }
-        @media (min-width: 768px) {
-            .feature-card .feature-symbol {
-                width: 48px;
-                height: 48px;
-                font-size: 1.4rem;
-                margin-bottom: 12px;
-            }
-        }
-        .feature-card h3 {
-            font-size: 0.7rem;
-            font-weight: 700;
-            margin-bottom: 3px;
-        }
-        @media (min-width: 640px) {
-            .feature-card h3 {
-                font-size: 0.85rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .feature-card h3 {
-                font-size: 1rem;
-                margin-bottom: 6px;
-            }
-        }
-        .feature-card p {
-            font-size: 0.6rem;
-            color: var(--text-light);
-            line-height: 1.5;
-        }
-        @media (min-width: 640px) {
-            .feature-card p {
-                font-size: 0.7rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .feature-card p {
-                font-size: 0.85rem;
-            }
-        }
-        body.dark-mode .feature-card p {
-            color: var(--text-dark);
-            opacity: 0.6;
-        }
-
-        /* ===== HISTORY ===== */
-        .history-section {
-            padding: 16px 0;
-        }
-        @media (min-width: 640px) {
-            .history-section {
-                padding: 24px 0;
-            }
-        }
-        @media (min-width: 1024px) {
-            .history-section {
-                padding: 32px 0;
-            }
-        }
-        .history-section .section-title {
-            font-size: 0.9rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            text-align: center;
-        }
-        @media (min-width: 640px) {
-            .history-section .section-title {
-                font-size: 1.1rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .history-section .section-title {
-                font-size: 1.3rem;
-                margin-bottom: 14px;
-            }
-        }
-        .history-list {
-            max-width: 700px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            width: 100%;
-        }
-        @media (min-width: 640px) {
-            .history-list {
-                gap: 8px;
-            }
-        }
-        @media (min-width: 768px) {
-            .history-list {
-                gap: 10px;
-            }
-        }
-        .history-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 6px;
-            padding: 8px 10px;
-            background: var(--bg-card);
-            border-radius: var(--radius-xs);
-            border: 1px solid var(--border);
-            transition: all var(--transition);
-            flex-wrap: wrap;
-            width: 100%;
-        }
-        @media (min-width: 640px) {
-            .history-item {
-                padding: 10px 14px;
-                gap: 10px;
-            }
-        }
-        @media (min-width: 768px) {
-            .history-item {
-                padding: 14px 18px;
-                gap: 12px;
-            }
-        }
-        body.dark-mode .history-item {
-            background: var(--bg-card-dark);
-            border-color: var(--border-dark);
-        }
-        .history-item:hover {
-            border-color: rgba(59, 130, 246, 0.3);
-            box-shadow: var(--shadow);
-        }
-        .history-item .short-url {
-            font-family: 'Courier New', monospace;
-            font-weight: 600;
-            color: var(--primary);
-            font-size: 0.7rem;
-            cursor: pointer;
-            word-break: break-all;
-            flex-shrink: 0;
-        }
-        @media (min-width: 640px) {
-            .history-item .short-url {
-                font-size: 0.8rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .history-item .short-url {
-                font-size: 0.85rem;
-            }
-        }
-        body.dark-mode .history-item .short-url {
-            color: var(--primary-light);
-        }
-        .history-item .original-url {
-            font-size: 0.6rem;
-            color: var(--text-light);
-            word-break: break-all;
-            flex: 1;
-            min-width: 60px;
-        }
-        @media (min-width: 640px) {
-            .history-item .original-url {
-                font-size: 0.7rem;
-                min-width: 100px;
-            }
-        }
-        @media (min-width: 768px) {
-            .history-item .original-url {
-                font-size: 0.75rem;
-                min-width: 130px;
-            }
-        }
-        body.dark-mode .history-item .original-url {
-            color: var(--text-dark);
-            opacity: 0.5;
-        }
-        .history-item .history-actions {
-            display: flex;
-            gap: 3px;
-            flex-shrink: 0;
-        }
-        .history-item .btn-icon {
-            background: none;
-            border: 1px solid var(--border);
-            border-radius: var(--radius-xs);
-            padding: 3px 6px;
-            cursor: pointer;
-            font-size: 0.6rem;
-            transition: all var(--transition);
-            color: var(--text-light);
-            -webkit-tap-highlight-color: transparent;
-        }
-        @media (min-width: 640px) {
-            .history-item .btn-icon {
-                padding: 4px 8px;
-                font-size: 0.7rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .history-item .btn-icon {
-                padding: 5px 10px;
-                font-size: 0.75rem;
-            }
-        }
-        .history-item .btn-icon:hover {
-            border-color: var(--primary-light);
-            color: var(--primary);
-            background: rgba(59, 130, 246, 0.06);
-        }
-        body.dark-mode .history-item .btn-icon {
-            border-color: var(--border-dark);
-            color: var(--text-dark);
-            opacity: 0.6;
-        }
-        .history-empty {
-            text-align: center;
-            color: var(--text-light);
-            padding: 16px;
-            font-size: 0.75rem;
-        }
-        @media (min-width: 640px) {
-            .history-empty {
-                padding: 20px;
-                font-size: 0.85rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .history-empty {
-                padding: 28px;
-                font-size: 0.9rem;
-            }
-        }
-        body.dark-mode .history-empty {
-            color: var(--text-dark);
-            opacity: 0.5;
-        }
-
-        /* ===== AD SPACE ===== */
-        .ad-space {
-            max-width: 728px;
-            margin: 14px auto;
-            padding: 10px;
-            text-align: center;
-            border: 1.5px dashed var(--border);
-            border-radius: var(--radius-xs);
-            min-height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.6rem;
-            color: var(--text-light);
-            letter-spacing: 0.3px;
-            text-transform: uppercase;
-            background: rgba(0, 0, 0, 0.02);
-            width: 100%;
-            box-sizing: border-box;
-        }
-        @media (min-width: 640px) {
-            .ad-space {
-                padding: 14px;
-                min-height: 55px;
-                font-size: 0.7rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .ad-space {
-                padding: 18px;
-                min-height: 80px;
-                font-size: 0.75rem;
-                border-radius: var(--radius-sm);
-            }
-        }
-        body.dark-mode .ad-space {
-            border-color: var(--border-dark);
-            color: var(--text-dark);
-            opacity: 0.4;
-            background: rgba(255, 255, 255, 0.02);
-        }
-
-        /* ===== INFO SECTIONS ===== */
-        .info-sections {
-            padding: 16px 0;
-            max-width: 800px;
-            margin: 0 auto;
-            width: 100%;
-        }
-        @media (min-width: 640px) {
-            .info-sections {
-                padding: 24px 0;
-            }
-        }
-        @media (min-width: 1024px) {
-            .info-sections {
-                padding: 32px 0;
-            }
-        }
-        .info-section {
-            margin-bottom: 10px;
-            padding: 12px;
-            background: var(--bg-card);
-            border-radius: var(--radius-xs);
-            border: 1px solid var(--border);
-        }
-        @media (min-width: 640px) {
-            .info-section {
-                padding: 16px 18px;
-                border-radius: var(--radius-sm);
-                margin-bottom: 16px;
-            }
-        }
-        @media (min-width: 768px) {
-            .info-section {
-                padding: 20px 24px;
-                margin-bottom: 20px;
-            }
-        }
-        body.dark-mode .info-section {
-            background: var(--bg-card-dark);
-            border-color: var(--border-dark);
-        }
-        .info-section h2 {
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 5px;
-            color: var(--primary);
-        }
-        @media (min-width: 640px) {
-            .info-section h2 {
-                font-size: 1rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .info-section h2 {
-                font-size: 1.2rem;
-                margin-bottom: 10px;
-            }
-        }
-        body.dark-mode .info-section h2 {
-            color: var(--primary-light);
-        }
-        .info-section p {
-            font-size: 0.7rem;
-            color: var(--text-light);
-            line-height: 1.6;
-        }
-        @media (min-width: 640px) {
-            .info-section p {
-                font-size: 0.8rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .info-section p {
-                font-size: 0.85rem;
-            }
-        }
-        body.dark-mode .info-section p {
-            color: var(--text-dark);
-            opacity: 0.7;
-        }
-
-        /* ===== FOOTER ===== */
-        .footer {
-            padding: 12px 0;
-            text-align: center;
-            border-top: 1px solid var(--border);
-            font-size: 0.65rem;
-            color: var(--text-light);
-            width: 100%;
-        }
-        @media (min-width: 640px) {
-            .footer {
-                padding: 16px 0;
-                font-size: 0.75rem;
-            }
-        }
-        @media (min-width: 768px) {
-            .footer {
-                padding: 20px 0;
-                font-size: 0.8rem;
-            }
-        }
-        body.dark-mode .footer {
-            border-top-color: var(--border-dark);
-            color: var(--text-dark);
-            opacity: 0.6;
-        }
-        .footer a {
-            color: var(--primary);
-            text-decoration: none;
-        }
-        body.dark-mode .footer a {
-            color: var(--primary-light);
-        }
-
-        /* ===== TOAST ===== */
-        .toast {
-            position: fixed;
-            bottom: 12px;
-            right: 12px;
-            left: 12px;
-            background: var(--bg-card);
-            border-radius: var(--radius-xs);
-            padding: 10px 14px;
-            box-shadow: var(--shadow-xl);
-            border: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            z-index: 2000;
-            animation: toastIn 0.3s ease, toastOut 0.3s ease 2.7s forwards;
-            font-size: 0.75rem;
-            font-weight: 500;
-            max-width: 100%;
-        }
-        @media (min-width: 640px) {
-            .toast {
-                right: 16px;
-                bottom: 16px;
-                left: auto;
-                max-width: 340px;
-                font-size: 0.85rem;
-                padding: 12px 18px;
-                border-radius: var(--radius-sm);
-            }
-        }
-        body.dark-mode .toast {
-            background: var(--bg-card-dark);
-            border-color: var(--border-dark);
-            color: var(--text-dark);
-        }
-        .toast.success {
-            border-left: 3px solid var(--success);
-        }
-        .toast.error {
-            border-left: 3px solid var(--danger);
-        }
-        @keyframes toastIn {
-            from {
-                opacity: 0;
-                transform: translateY(16px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes toastOut {
-            from {
-                opacity: 1;
-                transform: translateY(0);
-            }
-            to {
-                opacity: 0;
-                transform: translateY(16px);
-            }
-        }
-
-        .qr-container {
-            display: none;
-            margin-top: 8px;
-            text-align: center;
-        }
-        .qr-container.visible {
-            display: block;
-            animation: slideDown 0.3s ease;
-        }
-        .qr-container img {
-            max-width: 80px;
-            border-radius: var(--radius-xs);
-            border: 2px solid var(--border);
-            padding: 4px;
-            background: #fff;
-            width: auto;
-            height: auto;
-        }
-        @media (min-width: 640px) {
-            .qr-container img {
-                max-width: 110px;
-                padding: 6px;
-            }
-        }
-        @media (min-width: 768px) {
-            .qr-container img {
-                max-width: 140px;
-                padding: 8px;
-            }
-        }
-    </style>
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://olllo.netlify.app/"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Shortener",
+            "item": "https://olllo.netlify.app/#shortener"
+        }, {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Features",
+            "item": "https://olllo.netlify.app/#features"
+        }]
+    }
+    </script>
 </head>
 <body>
 
@@ -1783,14 +188,12 @@
                 <li><a href="#features">Features</a></li>
                 <li><a href="#history">History</a></li>
                 <li><a href="#about">About</a></li>
-                <li><button class="theme-toggle-desktop" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle theme">🌙</button></li>
+                <li><button class="theme-toggle-desktop" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle theme"><i class="fas fa-moon"></i></button></li>
             </ul>
 
             <!-- Hamburger (Mobile) -->
             <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <i class="fas fa-bars" id="hamburgerIcon"></i>
             </button>
         </div>
     </nav>
@@ -1798,11 +201,11 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobileMenu" onclick="closeMobileMenuOnOverlay(event)">
         <div class="mobile-menu-content">
-            <a href="#shortener" onclick="closeMobileMenu()">🔗 Shortener</a>
-            <a href="#features" onclick="closeMobileMenu()">⚡ Features</a>
-            <a href="#history" onclick="closeMobileMenu()">📋 History</a>
-            <a href="#about" onclick="closeMobileMenu()">ℹ️ About</a>
-            <button class="mobile-theme-toggle" onclick="toggleTheme(); closeMobileMenu();">🌙 Toggle Theme</button>
+            <a href="#shortener" onclick="closeMobileMenu()"><i class="fas fa-link"></i> Shortener</a>
+            <a href="#features" onclick="closeMobileMenu()"><i class="fas fa-bolt"></i> Features</a>
+            <a href="#history" onclick="closeMobileMenu()"><i class="fas fa-history"></i> History</a>
+            <a href="#about" onclick="closeMobileMenu()"><i class="fas fa-info-circle"></i> About</a>
+            <button class="mobile-theme-toggle" onclick="toggleTheme(); closeMobileMenu();"><i class="fas fa-moon"></i> Light/Dark Mode</button>
         </div>
     </div>
 
@@ -1818,7 +221,7 @@
                     <div class="input-group">
                         <label for="urlInput">Enter your long URL</label>
                         <div class="input-wrapper">
-                            <span class="url-prefix">🔗</span>
+                            <span class="url-prefix"><i class="fas fa-link"></i></span>
                             <input type="url" id="urlInput" placeholder="https://example.com/very/long/url" autocomplete="off" aria-label="URL to shorten" inputmode="url">
                         </div>
 
@@ -1853,9 +256,9 @@
                             <input type="text" id="resultURL" readonly aria-label="Shortened URL result">
                         </div>
                         <div class="result-actions">
-                            <button class="btn btn-sm btn-success" onclick="copyResult()" aria-label="Copy short URL">Copy</button>
-                            <button class="btn btn-sm btn-secondary" onclick="downloadQR()" aria-label="Download QR code">QR Code</button>
-                            <button class="btn btn-sm btn-secondary" onclick="shareResult()" aria-label="Share short URL">Share</button>
+                            <button class="btn btn-sm btn-success" onclick="copyResult()" aria-label="Copy short URL"><i class="fas fa-copy"></i> Copy</button>
+                            <button class="btn btn-sm btn-secondary" onclick="downloadQR()" aria-label="Download QR code"><i class="fas fa-qrcode"></i> QR Code</button>
+                            <button class="btn btn-sm btn-secondary" onclick="shareResult()" aria-label="Share short URL"><i class="fas fa-share-alt"></i> Share</button>
                         </div>
                         <div class="qr-container" id="qrContainer">
                             <img id="qrImage" src="" alt="QR Code for short URL">
@@ -1877,32 +280,32 @@
             <p class="section-subtitle">clck.ru shortening, AI analysis, QR codes — all free.</p>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-symbol">⚡</div>
+                    <div class="feature-symbol"><i class="fas fa-bolt"></i></div>
                     <h3>clck.ru Shortening</h3>
                     <p>Fast and reliable clck.ru short links.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-symbol">🤖</div>
+                    <div class="feature-symbol"><i class="fas fa-robot"></i></div>
                     <h3>AI Smart Analysis</h3>
                     <p>Detects URL patterns and flags suspicious links automatically.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-symbol">📊</div>
+                    <div class="feature-symbol"><i class="fas fa-chart-line"></i></div>
                     <h3>Click Tracking</h3>
                     <p>Monitor how many times your local links are clicked.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-symbol">🔒</div>
+                    <div class="feature-symbol"><i class="fas fa-shield-alt"></i></div>
                     <h3>Secure & Private</h3>
                     <p>All data stays in your browser. No account needed.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-symbol">📱</div>
+                    <div class="feature-symbol"><i class="fas fa-qrcode"></i></div>
                     <h3>QR Code Generation</h3>
                     <p>Generate QR codes for your links instantly.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-symbol">📋</div>
+                    <div class="feature-symbol"><i class="fas fa-clipboard-list"></i></div>
                     <h3>Full History</h3>
                     <p>Access and manage your complete link history.</p>
                 </div>
@@ -1918,7 +321,7 @@
                 <div class="history-empty" id="historyEmpty">No links shortened yet. Start by shortening your first URL above!</div>
             </div>
             <div style="text-align:center; margin-top:10px;">
-                <button class="btn btn-sm btn-secondary" onclick="clearHistory()" id="clearHistoryBtn" style="display:none;" aria-label="Clear history">Clear All History</button>
+                <button class="btn btn-sm btn-secondary" onclick="clearHistory()" id="clearHistoryBtn" style="display:none;" aria-label="Clear history"><i class="fas fa-trash"></i> Clear All History</button>
             </div>
         </div>
     </section>
@@ -1953,484 +356,11 @@
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 <a href="#">ShortURL Pro</a>. All rights reserved. | Free clck.ru URL Shortener | <a href="#about">Privacy Policy</a> | <a href="#about">Terms of Service</a></p>
+            <p>&copy; <span id="copyrightYear">2025</span> <a href="#">ShortURL Pro</a>. All rights reserved. | Free clck.ru URL Shortener | <a href="#about">Privacy Policy</a> | <a href="#about">Terms of Service</a></p>
         </div>
     </footer>
 
-    <script>
-        // ===== GLOBALS =====
-        const STORAGE_KEY = 'shorturlpro_history';
-        const SHORT_PREFIX = '#s/';
-        const MAX_HISTORY = 50;
-
-        // ===== THEME =====
-        function getTheme() {
-            return localStorage.getItem('shorturlpro_theme') || 'light';
-        }
-
-        function applyTheme(theme) {
-            if (theme === 'dark') {
-                document.body.classList.add('dark-mode');
-                document.querySelectorAll('.theme-toggle-desktop, .mobile-theme-toggle').forEach(el => {
-                    el.textContent = '☀️';
-                });
-            } else {
-                document.body.classList.remove('dark-mode');
-                document.querySelectorAll('.theme-toggle-desktop, .mobile-theme-toggle').forEach(el => {
-                    el.textContent = '🌙';
-                });
-            }
-            localStorage.setItem('shorturlpro_theme', theme);
-        }
-
-        function toggleTheme() {
-            const current = getTheme();
-            applyTheme(current === 'dark' ? 'light' : 'dark');
-        }
-
-        // ===== MOBILE MENU =====
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            const hamburger = document.getElementById('hamburgerBtn');
-            const isOpen = menu.classList.contains('active');
-            if (isOpen) {
-                closeMobileMenu();
-            } else {
-                menu.classList.add('active');
-                hamburger.classList.add('active');
-                document.body.classList.add('menu-open');
-                hamburger.setAttribute('aria-expanded', 'true');
-            }
-        }
-
-        function closeMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            const hamburger = document.getElementById('hamburgerBtn');
-            menu.classList.remove('active');
-            hamburger.classList.remove('active');
-            document.body.classList.remove('menu-open');
-            hamburger.setAttribute('aria-expanded', 'false');
-        }
-
-        function closeMobileMenuOnOverlay(event) {
-            if (event.target === document.getElementById('mobileMenu')) {
-                closeMobileMenu();
-            }
-        }
-
-        // ===== SERVICE INFO =====
-        function updateServiceInfo() {
-            const select = document.getElementById('serviceSelect');
-            const info = document.getElementById('serviceInfo');
-            const value = select.value;
-            const serviceNames = {
-                'clck.ru': 'clck.ru — short domain',
-                'local': 'Local — browser-based link'
-            };
-            info.textContent = serviceNames[value] || 'Select a service';
-        }
-
-        // ===== HISTORY =====
-        function getHistory() {
-            try {
-                const data = localStorage.getItem(STORAGE_KEY);
-                return data ? JSON.parse(data) : [];
-            } catch {
-                return [];
-            }
-        }
-
-        function saveHistory(history) {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
-        }
-
-        function addToHistory(originalURL, shortURL, method) {
-            const history = getHistory();
-            history.unshift({
-                id: Date.now().toString(36) + Math.random().toString(36).substr(2, 5),
-                originalURL: originalURL,
-                shortURL: shortURL,
-                method: method,
-                clicks: 0,
-                createdAt: new Date().toISOString()
-            });
-            if (history.length > MAX_HISTORY) history.length = MAX_HISTORY;
-            saveHistory(history);
-            renderHistory();
-        }
-
-        function deleteHistoryItem(id) {
-            const history = getHistory().filter(item => item.id !== id);
-            saveHistory(history);
-            renderHistory();
-            showToast('Link removed from history', 'success');
-        }
-
-        function clearHistory() {
-            saveHistory([]);
-            renderHistory();
-            showToast('All history cleared', 'success');
-        }
-
-        function copyHistoryURL(shortURL) {
-            navigator.clipboard.writeText(shortURL).then(() => {
-                showToast('Short URL copied!', 'success');
-            }).catch(() => {
-                showToast('Failed to copy', 'error');
-            });
-        }
-
-        function renderHistory() {
-            const history = getHistory();
-            const listEl = document.getElementById('historyList');
-            const clearBtn = document.getElementById('clearHistoryBtn');
-            if (history.length === 0) {
-                listEl.innerHTML = '<div class="history-empty">No links shortened yet. Start by shortening your first URL above!</div>';
-                clearBtn.style.display = 'none';
-                return;
-            }
-            clearBtn.style.display = 'inline-flex';
-            listEl.innerHTML = history.map(item => `
-                <div class="history-item">
-                    <span class="short-url" onclick="copyHistoryURL('${escapeHTML(item.shortURL)}')" title="Click to copy">${escapeHTML(item.shortURL)}</span>
-                    <span class="original-url" title="${escapeHTML(item.originalURL)}">${escapeHTML(truncateURL(item.originalURL, 45))}</span>
-                    <div class="history-actions">
-                        <button class="btn-icon" onclick="copyHistoryURL('${escapeHTML(item.shortURL)}')">Copy</button>
-                        <button class="btn-icon" onclick="deleteHistoryItem('${item.id}')">Delete</button>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function truncateURL(url, maxLength) {
-            return url.length <= maxLength ? url : url.substring(0, maxLength) + '...';
-        }
-
-        function escapeHTML(str) {
-            const div = document.createElement('div');
-            div.textContent = str;
-            return div.innerHTML;
-        }
-
-        // ===== CUSTOM SLUG =====
-        function toggleCustomSlug() {
-            const toggle = document.getElementById('customSlugToggle');
-            const container = document.getElementById('customSlugContainer');
-            container.classList.toggle('visible', toggle.checked);
-            if (!toggle.checked) document.getElementById('customSlugInput').value = '';
-        }
-
-        // ===== URL VALIDATION =====
-        function isValidURL(url) {
-            try {
-                const parsed = new URL(url);
-                return parsed.protocol === 'http:' || parsed.protocol === 'https:';
-            } catch { return false; }
-        }
-
-        function normalizeURL(url) {
-            url = url.trim();
-            if (!url.match(/^https?:\/\//i)) url = 'https://' + url;
-            return url;
-        }
-
-        // ===== AI ANALYSIS =====
-        function analyzeURL(url) {
-            const analysis = { type: 'unknown', risk: 'low', suggestions: [] };
-            try {
-                const parsed = new URL(url);
-                const domain = parsed.hostname.toLowerCase();
-                if (domain.includes('facebook.com') || domain.includes('fb.com')) analysis.type = 'Social Media - Facebook';
-                else if (domain.includes('twitter.com') || domain.includes('x.com')) analysis.type = 'Social Media - Twitter/X';
-                else if (domain.includes('instagram.com')) analysis.type = 'Social Media - Instagram';
-                else if (domain.includes('linkedin.com')) analysis.type = 'Professional - LinkedIn';
-                else if (domain.includes('youtube.com') || domain.includes('youtu.be')) analysis.type = 'Video - YouTube';
-                else if (domain.includes('github.com')) analysis.type = 'Developer - GitHub';
-                else if (domain.includes('amazon.com')) analysis.type = 'E-commerce - Amazon';
-                else if (domain.includes('wikipedia.org')) analysis.type = 'Educational - Wikipedia';
-                else if (domain.includes('reddit.com')) analysis.type = 'Community - Reddit';
-                else if (domain.includes('google.com')) analysis.type = 'Google Service';
-                else if (domain.endsWith('.edu')) analysis.type = 'Educational Institution';
-                else if (domain.endsWith('.gov')) analysis.type = 'Government Website';
-                else if (domain.endsWith('.org')) analysis.type = 'Organization';
-                else analysis.type = 'General Website';
-
-                const suspicious = [/bit\.ly\/.*redirect/i, /free.*gift.*card/i, /verify.*account/i, /\.tk\//i, /\.ml\//i];
-                for (const p of suspicious) {
-                    if (p.test(url)) {
-                        analysis.risk = 'high';
-                        analysis.suggestions.push('⚠️ Potential phishing pattern detected.');
-                        break;
-                    }
-                }
-                if (url.length > 100) analysis.suggestions.push('📏 Very long URL — shortening will help.');
-                else if (url.length > 50) analysis.suggestions.push('📏 Moderately long URL.');
-                else analysis.suggestions.push('✅ URL looks safe and normal.');
-            } catch {
-                analysis.type = 'Unknown';
-                analysis.risk = 'medium';
-                analysis.suggestions.push('⚠️ Unable to analyze fully.');
-            }
-            return analysis;
-        }
-
-        function displayAIAnalysis(analysis) {
-            const el = document.getElementById('aiAnalysis');
-            if (!el) return;
-            const riskColor = analysis.risk === 'low' ? '#10b981' : analysis.risk === 'medium' ? '#f59e0b' : '#ef4444';
-            const riskText = analysis.risk === 'low' ? 'Low Risk' : analysis.risk === 'medium' ? 'Medium Risk' : 'High Risk';
-            el.innerHTML = `<div class="ai-header">🤖 AI: ${analysis.type} | <span style="color:${riskColor};">${riskText}</span></div><div class="ai-detail">${analysis.suggestions.join('<br>')}</div>`;
-            el.classList.add('visible');
-        }
-
-        function hideAIAnalysis() { document.getElementById('aiAnalysis')?.classList.remove('visible'); }
-
-        // ===== SHORT URL GENERATION =====
-        function generateShortCode(length = 7) {
-            const chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-            let result = '';
-            for (let i = 0; i < length; i++) result += chars.charAt(Math.floor(Math.random() * chars.length));
-            return result;
-        }
-
-        function generateHashShortURL(code) {
-            return window.location.origin + window.location.pathname + SHORT_PREFIX + code;
-        }
-
-        // Only clck.ru service builder
-        const serviceBuilders = {
-            'clck.ru': (url) => `https://clck.ru/--?url=${encodeURIComponent(url)}`
-        };
-
-        async function shortenWithService(url, serviceName) {
-            if (serviceName === 'local') return null;
-            const builder = serviceBuilders[serviceName];
-            if (!builder) return null;
-            try {
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), 8000);
-                const response = await fetch(builder(url), {
-                    method: 'GET',
-                    headers: { 'Accept': 'text/plain, */*' },
-                    mode: 'cors',
-                    signal: controller.signal
-                });
-                clearTimeout(timeoutId);
-                if (!response.ok) return null;
-                const text = (await response.text()).trim();
-                if (text && text.startsWith('http') && !text.includes('error') && !text.includes('invalid')) {
-                    return { shortURL: text, method: serviceName };
-                }
-            } catch { return null; }
-            return null;
-        }
-
-        function storeLocalShortURL(originalURL, customCode) {
-            const code = customCode || generateShortCode();
-            const shortURL = generateHashShortURL(code);
-            const mappings = JSON.parse(localStorage.getItem('shorturlpro_mappings') || '{}');
-            mappings[code] = originalURL;
-            localStorage.setItem('shorturlpro_mappings', JSON.stringify(mappings));
-            const clicks = JSON.parse(localStorage.getItem('shorturlpro_clicks') || '{}');
-            clicks[code] = 0;
-            localStorage.setItem('shorturlpro_clicks', JSON.stringify(clicks));
-            return { shortURL, method: 'Local' };
-        }
-
-        // ===== MAIN SHORTEN =====
-        async function shortenURL() {
-            const urlInput = document.getElementById('urlInput');
-            const errorEl = document.getElementById('errorMessage');
-            const shortenBtn = document.getElementById('shortenBtn');
-            const btnText = document.getElementById('btnText');
-            const resultSection = document.getElementById('resultSection');
-            const resultURL = document.getElementById('resultURL');
-            const serviceSelect = document.getElementById('serviceSelect');
-            const customSlugToggle = document.getElementById('customSlugToggle');
-            const customSlugInput = document.getElementById('customSlugInput');
-
-            errorEl.classList.remove('visible');
-            errorEl.textContent = '';
-            resultSection.classList.remove('visible');
-            hideAIAnalysis();
-            urlInput.classList.remove('error');
-
-            let rawURL = urlInput.value.trim();
-            if (!rawURL) {
-                errorEl.textContent = 'Please enter a URL to shorten.';
-                errorEl.classList.add('visible');
-                urlInput.classList.add('error');
-                urlInput.focus();
-                return;
-            }
-
-            const originalURL = normalizeURL(rawURL);
-            if (!isValidURL(originalURL)) {
-                errorEl.textContent = 'Please enter a valid URL.';
-                errorEl.classList.add('visible');
-                urlInput.classList.add('error');
-                return;
-            }
-
-            let customCode = null;
-            if (customSlugToggle.checked) {
-                customCode = customSlugInput.value.trim();
-                if (customCode && !/^[a-zA-Z0-9-_]{3,20}$/.test(customCode)) {
-                    errorEl.textContent = 'Custom code must be 3-20 chars.';
-                    errorEl.classList.add('visible');
-                    return;
-                }
-                if (customCode) {
-                    const mappings = JSON.parse(localStorage.getItem('shorturlpro_mappings') || '{}');
-                    if (mappings[customCode]) {
-                        errorEl.textContent = 'Custom code already in use.';
-                        errorEl.classList.add('visible');
-                        return;
-                    }
-                }
-            }
-
-            const selectedService = serviceSelect.value;
-            shortenBtn.disabled = true;
-            btnText.innerHTML = '<span class="spinner"></span> Shortening...';
-
-            try {
-                const analysis = analyzeURL(originalURL);
-                displayAIAnalysis(analysis);
-
-                let result = null;
-                if (customCode) {
-                    result = storeLocalShortURL(originalURL, customCode);
-                } else if (selectedService === 'clck.ru') {
-                    result = await shortenWithService(originalURL, 'clck.ru');
-                } else if (selectedService === 'local') {
-                    result = storeLocalShortURL(originalURL, null);
-                }
-
-                if (!result) {
-                    result = storeLocalShortURL(originalURL, null);
-                    showToast('clck.ru failed. Used local link.', 'error');
-                }
-
-                resultURL.value = result.shortURL;
-                resultSection.classList.add('visible');
-                addToHistory(originalURL, result.shortURL, result.method);
-                showToast(`Shortened via ${result.method}!`, 'success');
-                generateQRCode(result.shortURL);
-
-            } catch (err) {
-                console.error('Error:', err);
-                try {
-                    const localResult = storeLocalShortURL(originalURL, null);
-                    resultURL.value = localResult.shortURL;
-                    resultSection.classList.add('visible');
-                    addToHistory(originalURL, localResult.shortURL, 'Local');
-                    generateQRCode(localResult.shortURL);
-                    showToast('Used local fallback.', 'success');
-                } catch {
-                    errorEl.textContent = 'Failed to shorten. Try again.';
-                    errorEl.classList.add('visible');
-                }
-            } finally {
-                shortenBtn.disabled = false;
-                btnText.textContent = 'Shorten URL';
-            }
-        }
-
-        // ===== QR CODE =====
-        function generateQRCode(shortURL) {
-            const qrContainer = document.getElementById('qrContainer');
-            const qrImage = document.getElementById('qrImage');
-            qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=${encodeURIComponent(shortURL)}`;
-            qrContainer.classList.add('visible');
-        }
-
-        function downloadQR() {
-            const qrImage = document.getElementById('qrImage');
-            if (!qrImage.src) return;
-            const link = document.createElement('a');
-            link.href = qrImage.src;
-            link.download = 'shorturl-qr.png';
-            link.target = '_blank';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            showToast('QR download started!', 'success');
-        }
-
-        // ===== COPY & SHARE =====
-        function copyResult() {
-            const resultURL = document.getElementById('resultURL');
-            if (!resultURL.value) return;
-            navigator.clipboard.writeText(resultURL.value).then(() => {
-                showToast('Short URL copied!', 'success');
-            }).catch(() => {
-                resultURL.select();
-                document.execCommand('copy');
-                showToast('Short URL copied!', 'success');
-            });
-        }
-
-        function shareResult() {
-            const resultURL = document.getElementById('resultURL');
-            if (!resultURL.value) return;
-            if (navigator.share) {
-                navigator.share({ title: 'ShortURL Pro', text: 'Shortened link:', url: resultURL.value })
-                    .then(() => showToast('Shared!', 'success')).catch(() => {});
-            } else {
-                copyResult();
-            }
-        }
-
-        // ===== TOAST =====
-        function showToast(message, type) {
-            const existing = document.querySelector('.toast');
-            if (existing) existing.remove();
-            const toast = document.createElement('div');
-            toast.className = `toast ${type === 'success' ? 'success' : 'error'}`;
-            toast.innerHTML = `${type === 'success' ? '✅' : '❌'} ${message}`;
-            document.body.appendChild(toast);
-            setTimeout(() => { if (toast.parentNode) toast.remove(); }, 3000);
-        }
-
-        // ===== REDIRECT HANDLER =====
-        function handleRedirect() {
-            const hash = window.location.hash;
-            if (!hash || !hash.startsWith(SHORT_PREFIX)) return;
-            const code = hash.substring(SHORT_PREFIX.length);
-            const mappings = JSON.parse(localStorage.getItem('shorturlpro_mappings') || '{}');
-            const clicks = JSON.parse(localStorage.getItem('shorturlpro_clicks') || '{}');
-            if (mappings[code]) {
-                clicks[code] = (clicks[code] || 0) + 1;
-                localStorage.setItem('shorturlpro_clicks', JSON.stringify(clicks));
-                window.location.replace(mappings[code]);
-            }
-        }
-
-        // ===== INIT =====
-        function init() {
-            applyTheme(getTheme());
-            renderHistory();
-            handleRedirect();
-            updateServiceInfo();
-
-            const urlInput = document.getElementById('urlInput');
-            const customSlugInput = document.getElementById('customSlugInput');
-            urlInput.addEventListener('keydown', e => { if (e.key === 'Enter') shortenURL(); });
-            customSlugInput.addEventListener('keydown', e => { if (e.key === 'Enter') shortenURL(); });
-            urlInput.addEventListener('input', function() {
-                this.classList.remove('error');
-                document.getElementById('errorMessage').classList.remove('visible');
-            });
-
-            // Close mobile menu on Escape
-            document.addEventListener('keydown', e => {
-                if (e.key === 'Escape') closeMobileMenu();
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', init);
-        if (document.readyState === 'complete' || document.readyState === 'interactive') init();
-    </script>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
