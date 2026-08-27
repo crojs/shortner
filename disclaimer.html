@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Disclaimer | ShortURL Pro</title>
+    <meta name="description" content="Disclaimer for ShortURL Pro – Understand the limitations and liabilities of using our free URL shortener.">
+    <link rel="canonical" href="https://olllo.netlify.app/disclaimer.html">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1e40af">
+
+    <!-- Favicon (Updated) -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png?v=20260827" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260827" />
+    <link rel="shortcut icon" href="/favicon.ico?v=20260827" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260827" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/site.webmanifest?v=20260827" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><span class="brand-dot"></span> ShortURL<span style="color:#3b82f6;">Pro</span></a>
+            <ul class="navbar-links">
+                <li><a href="index.html#shortener">Shortener</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#history">History</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="theme-toggle-desktop" onclick="toggleTheme()"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()"><i class="fas fa-bars" id="hamburgerIcon"></i></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu" onclick="closeMobileMenuOnOverlay(event)">
+        <div class="mobile-menu-content">
+            <a href="index.html#shortener"><i class="fas fa-link"></i> Shortener</a>
+            <a href="index.html#features"><i class="fas fa-bolt"></i> Features</a>
+            <a href="index.html#history"><i class="fas fa-history"></i> History</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="privacy.html"><i class="fas fa-lock"></i> Privacy</a>
+            <a href="terms.html"><i class="fas fa-file-contract"></i> Terms</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+            <button class="mobile-theme-toggle" onclick="toggleTheme(); closeMobileMenu();"><i class="fas fa-moon"></i> Light/Dark Mode</button>
+        </div>
+    </div>
+    <main class="hero" style="padding: 40px 0;">
+        <div class="container">
+            <div class="content" style="max-width: 800px; margin: 0 auto; background: var(--bg-card); padding: 30px; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg);">
+                <h1 style="font-size: 2rem; margin-bottom: 20px; color: var(--primary);">Disclaimer</h1>
+                <p style="color: var(--text-light); margin-bottom: 15px;">Last updated: <span id="currentDate"></span></p>
+                <p style="color: var(--text-light); margin-bottom: 15px;">ShortURL Pro provides a free service for shortening URLs. By using our website, you agree to the following disclaimer:</p>
+                <p style="color: var(--text-light); margin-bottom: 15px;"><strong>No Responsibility for Shortened Content:</strong> We are not responsible for the content of any shortened URLs. The target website's content is solely the responsibility of its owner.</p>
+                <p style="color: var(--text-light); margin-bottom: 15px;"><strong>Use at Your Own Risk:</strong> You acknowledge that you use our service at your own risk. We do not guarantee the accuracy, safety, or legality of any shortened link.</p>
+                <p style="color: var(--text-light); margin-bottom: 15px;"><strong>Third-Party Links:</strong> Our website may contain links to external sites. We are not responsible for the privacy practices or content of those sites.</p>
+                <p style="color: var(--text-light); margin-bottom: 15px;"><strong>Advertising:</strong> We may display third-party advertisements (such as Google AdSense) on our website. These advertisers may use cookies to serve ads based on your interests.</p>
+                <p style="color: var(--text-light); margin-bottom: 15px;">If you have any concerns about a link shortened using our service, please contact us immediately at <a href="mailto:support@olllo.netlify.app" style="color:var(--primary-light);">support@olllo.netlify.app</a>.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="about.html">About</a> |
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Service</a> |
+                <a href="disclaimer.html">Disclaimer</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="blog.html">Blog</a>
+            </p>
+            <p>&copy; <span id="copyrightYear">2025</span> <a href="index.html">ShortURL Pro</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>

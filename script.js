@@ -562,6 +562,30 @@ function handleRedirect() {
     }
 }
 
+// ===== COOKIE CONSENT =====
+function initCookieConsent() {
+    const consent = storageGet('cookie_consent', null);
+    const banner = getEl('cookieConsent');
+    if (!banner) return;
+    if (consent === null) {
+        banner.style.display = 'block';
+    } else {
+        banner.style.display = 'none';
+    }
+}
+
+function acceptCookies() {
+    storageSet('cookie_consent', 'accepted');
+    const banner = getEl('cookieConsent');
+    if (banner) banner.style.display = 'none';
+}
+
+function declineCookies() {
+    storageSet('cookie_consent', 'declined');
+    const banner = getEl('cookieConsent');
+    if (banner) banner.style.display = 'none';
+}
+
 // ===== DYNAMIC YEAR =====
 function setDynamicYear() {
     const yearEl = getEl('copyrightYear');
@@ -577,6 +601,7 @@ function init() {
     handleRedirect();
     updateServiceInfo();
     setDynamicYear();
+    initCookieConsent();
 
     const urlInput = getEl('urlInput');
     const customSlugInput = getEl('customSlugInput');

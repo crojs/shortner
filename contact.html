@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Contact Us | ShortURL Pro</title>
+    <meta name="description" content="Contact ShortURL Pro – Reach out for support, feedback, or business inquiries.">
+    <link rel="canonical" href="https://olllo.netlify.app/contact.html">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1e40af">
+
+    <!-- Favicon (Updated) -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png?v=20260827" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260827" />
+    <link rel="shortcut icon" href="/favicon.ico?v=20260827" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=20260827" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/site.webmanifest?v=20260827" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><span class="brand-dot"></span> ShortURL<span style="color:#3b82f6;">Pro</span></a>
+            <ul class="navbar-links">
+                <li><a href="index.html#shortener">Shortener</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#history">History</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button class="theme-toggle-desktop" onclick="toggleTheme()"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()"><i class="fas fa-bars" id="hamburgerIcon"></i></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu" onclick="closeMobileMenuOnOverlay(event)">
+        <div class="mobile-menu-content">
+            <a href="index.html#shortener"><i class="fas fa-link"></i> Shortener</a>
+            <a href="index.html#features"><i class="fas fa-bolt"></i> Features</a>
+            <a href="index.html#history"><i class="fas fa-history"></i> History</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="privacy.html"><i class="fas fa-lock"></i> Privacy</a>
+            <a href="terms.html"><i class="fas fa-file-contract"></i> Terms</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+            <button class="mobile-theme-toggle" onclick="toggleTheme(); closeMobileMenu();"><i class="fas fa-moon"></i> Light/Dark Mode</button>
+        </div>
+    </div>
+    <main class="hero" style="padding: 40px 0;">
+        <div class="container">
+            <div class="content" style="max-width: 800px; margin: 0 auto; background: var(--bg-card); padding: 30px; border-radius: var(--radius-sm); box-shadow: var(--shadow-lg);">
+                <h1 style="font-size: 2rem; margin-bottom: 20px; color: var(--primary);">Contact Us</h1>
+                <p style="color: var(--text-light); margin-bottom: 15px;">If you have any questions, suggestions, or business inquiries, feel free to reach out using the form below or email us directly.</p>
+                <div style="margin:20px 0; padding:15px; background:#f0f7ff; border-radius:8px;">
+                    <i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:support@olllo.netlify.app" style="color:var(--primary-light);">support@olllo.netlify.app</a>
+                </div>
+                <form action="mailto:support@olllo.netlify.app" method="post" enctype="text/plain">
+                    <div style="margin-bottom:20px;">
+                        <label for="name" style="display:block; font-weight:600; margin-bottom:5px; color:var(--text);">Your Name</label>
+                        <input type="text" id="name" name="name" required style="width:100%; padding:10px; border:2px solid var(--border); border-radius:6px; font-size:1rem;">
+                    </div>
+                    <div style="margin-bottom:20px;">
+                        <label for="email" style="display:block; font-weight:600; margin-bottom:5px; color:var(--text);">Your Email</label>
+                        <input type="email" id="email" name="email" required style="width:100%; padding:10px; border:2px solid var(--border); border-radius:6px; font-size:1rem;">
+                    </div>
+                    <div style="margin-bottom:20px;">
+                        <label for="message" style="display:block; font-weight:600; margin-bottom:5px; color:var(--text);">Message</label>
+                        <textarea id="message" name="message" rows="5" required style="width:100%; padding:10px; border:2px solid var(--border); border-radius:6px; font-size:1rem;"></textarea>
+                    </div>
+                    <button type="submit" style="background:var(--primary-light); color:white; padding:12px 30px; border:none; border-radius:6px; font-size:1rem; cursor:pointer;"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="about.html">About</a> |
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Service</a> |
+                <a href="disclaimer.html">Disclaimer</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="blog.html">Blog</a>
+            </p>
+            <p>&copy; <span id="copyrightYear">2025</span> <a href="index.html">ShortURL Pro</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
